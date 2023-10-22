@@ -1,0 +1,41 @@
+.container {
+  border: 1px solid black;
+  background-color: rgb(238, 244, 246);
+  z-index: 10;
+  min-height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: calc(50vh - 265px);
+  left: calc(50vw - 250px);
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+}
+
+.title {
+  justify-content: center;
+  text-align: center;
+  font-weight: 800;
+  padding: 10px 0 5px 0;
+  font-size: 24px;
+}
+
+.infoWrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.infoContainer {
+  margin: 0.5rem 0 1rem 0;
+}
+
+.infoContainer p:last-child{
+    font-size: 13px;
+}
+
+.tech {
+    font-weight: 600;
+  }
+  
