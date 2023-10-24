@@ -6,7 +6,7 @@ import config from "../../config/env";
 
 const Home=async()=> {
 
-  await connect(config.mongo.uri, {useNewUrlParser : true, useUnifiedTopology : true});
+  await connect(config.mongo_uri, {useNewUrlParser : true, useUnifiedTopology : true});
   const allProjects = await projectController.getProjects();
   
   

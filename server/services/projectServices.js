@@ -4,7 +4,7 @@ import {connect} from 'mongoose';
 import config from '../../config/env';
 const projectService = {};
 projectService.getProjects = async() => {
-    await connect(config.mongo.uri, {useNewUrlParser : true, useUnifiedTopology : true}).then(()=>console.log('DataBase connnected Listening .......')).catch(err => console.log(err))
+    await connect(config.mongo_uri, {useNewUrlParser : true, useUnifiedTopology : true}).then(()=>console.log('DataBase connnected Listening .......')).catch(err => console.log(err))
     try{
         const projects = await Project.find();
         

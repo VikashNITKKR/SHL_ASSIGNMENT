@@ -7,7 +7,7 @@ import { data } from "autoprefixer";
 
 export async function POST(req){
     
-    await connect(config.mongo.uri, {useNewUrlParser : true, useUnifiedTopology : true})
+    await connect(config.mongo_uri, {useNewUrlParser : true, useUnifiedTopology : true})
     
     const body = await req.json();
     
