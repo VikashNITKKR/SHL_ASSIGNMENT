@@ -11,7 +11,7 @@ export async function POST(req){
     await connect(config.mongo_uri, {useNewUrlParser : true, useUnifiedTopology : true})
     
     const body = await req.json();
-    const response = await runPrompt(body[0]);
+    const response = await runPrompt(body);
     const frontend = response.Frontend;
     const backend = response.Backend;
     const database = response.Database;
